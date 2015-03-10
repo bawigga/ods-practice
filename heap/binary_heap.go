@@ -1,13 +1,20 @@
+// A BinaryHeap implements the (priority) Queue interface. Ignoring the cost of
+// calls to resize(), a BinaryHeap supports the operations add(x) and remove()
+// in O(log n) time per operation. Beginning with an empty BinaryHeap, any
+// sequence of m add(x) and remove() operations results in a total of O(m) time
+// spent during all calls to resize().
+//
+// http://opendatastructures.org/ods-cpp/10_1_Implicit_Binary_Tree.html
+
 package heap
 
 import (
-	//"fmt"
 	log "github.com/Sirupsen/logrus"
 )
 
 func init() {
-	log.SetLevel(log.DebugLevel)
-	//log.SetLevel(log.InfoLevel)
+	//log.SetLevel(log.DebugLevel)
+	log.SetLevel(log.InfoLevel)
 }
 
 type BinaryHeap struct {
