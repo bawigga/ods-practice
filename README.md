@@ -1,3 +1,3 @@
 # opendatastructures.org - Practice Programs
 
-Implementing some of the topics from opendatastructures.org
+Sandbox for writing some GoLang programs based on topics from opendatastructures.org
