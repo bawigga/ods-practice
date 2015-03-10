@@ -17,5 +17,18 @@ func TestAdd(t *testing.T) {
 	if index != 2 {
 		t.Errorf("Expected index %d, got %d", 2, index)
 	}
-	//fmt.Printf("nodes: %v", heap)
+}
+
+func TestRemove(t *testing.T) {
+	heap := BinaryHeap{
+		nodes: []int{4, 9, 6, 17, 26, 8, 16, 19, 69, 32, 93, 55, 50},
+	}
+
+	nodes := []int{}
+	node := heap.Remove()
+	for node > 0 {
+		nodes = append(nodes, node)
+		node = heap.Remove()
+	}
+	fmt.Printf("nodes", nodes)
 }
